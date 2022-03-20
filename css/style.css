@@ -1,0 +1,198 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  background: #f2f9f5;
+}
+
+* {
+  color: #02140d;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .navbar #top-nav {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f9f5;
+  transition: 0.2s;
+}
+.header .navbar #top-nav .link-home .logo {
+  width: 100px;
+}
+.header .navbar #top-nav .link-home .logo.bis {
+  display: none;
+}
+.header .navbar #top-nav .menu-nav {
+  display: flex;
+  flex-direction: row;
+}
+.header .navbar #top-nav .menu-nav .link-item-nav {
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.header .navbar #top-nav .menu-nav .link-item-nav:hover {
+  color: #0e5b3f;
+}
+.header .navbar #top-nav.scroll-active {
+  height: 60px;
+}
+.header .navbar #top-nav .menu-burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.header .navbar #trait {
+  width: 90%;
+  border: 1px solid #02140d;
+  transition: 0.2s;
+}
+.header .hero-banner {
+  margin-top: 100px;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header .hero-banner .left {
+  margin-right: 50px;
+}
+.header .hero-banner .left .logo-gif {
+  width: 600px;
+}
+.header .hero-banner .right {
+  margin-top: -50px;
+}
+.header .hero-banner .right .box-title {
+  margin-bottom: 50px;
+}
+.header .hero-banner .right .box-title .title {
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  color: #0e5b3f;
+}
+.header .hero-banner .right .box-title .subtitle {
+  font-size: 20px;
+}
+.header .hero-banner .right .box-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.header .hero-banner .right .box-btn .title-btn {
+  text-decoration: none;
+  background: #0e5b3f;
+  color: #f2f9f5;
+  border: 3px solid #0e5b3f;
+  font-size: 18px;
+  padding: 20px;
+  transition: 0.2s;
+}
+.header .hero-banner .right .box-btn .title-btn.bis {
+  margin-left: 20px;
+  font-weight: 800;
+  background: #f2f9f5;
+  color: #0e5b3f;
+}
+.header .hero-banner .right .box-btn .title-btn.bis:hover {
+  background: #0e5b3f;
+  color: #f2f9f5;
+}
+.header .hero-banner .right .box-btn .title-btn:hover {
+  background: #f2f9f5;
+  color: #0e5b3f;
+}
+
+@media screen and (max-width: 933px) {
+  body .header .navbar #top-nav .menu-nav {
+    display: none;
+  }
+  body .header .navbar #top-nav .menu-burger {
+    display: block;
+  }
+  body .header .hero-banner {
+    flex-direction: column;
+  }
+  body .header .hero-banner .left {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 440px) {
+  body .header .hero-banner .right .box-btn {
+    flex-direction: column;
+  }
+  body .header .hero-banner .right .box-btn .title-btn.bis {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
