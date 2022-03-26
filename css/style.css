@@ -277,7 +277,7 @@ body, html {
   align-items: center;
 }
 
-.little-screen i {
+.little-screen i.alert {
   font-size: 80px;
   color: var(--green);
 }
